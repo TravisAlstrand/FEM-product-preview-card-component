@@ -113,6 +113,9 @@ h1 {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px auto 0;
   width: 100%;
   height: 3rem;
@@ -123,10 +126,6 @@ button {
 
 button:hover {
   background-color: var(--clr-primary-hvr);
-}
-
-.btn-div {
-  justify-content: center;
 }
 
 .btn-text {
