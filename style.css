@@ -56,12 +56,17 @@ a {
 /* BASIC STYLES */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: var(--clr-background);
 }
 
 .card {
   max-width: 500px;
-  margin: 1.75rem 1rem;
+  margin-inline: 1rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
   background-color: var(--clr-card-bckgrnd);
@@ -131,6 +136,7 @@ button:hover {
 }
 
 .attribution {
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -143,17 +149,11 @@ a:visited {
   color: var(--clr-primary-hvr);
 }
 
-@media (min-width: 532px) {
-  .card {
-    margin-inline: auto;
-  }
-}
-
 @media (min-width: 648px) {
+
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-inline: auto;
     max-width: 600px;
   }
 
