@@ -151,14 +151,15 @@ a:visited {
 
 @media (min-width: 648px) {
   .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-inline: auto;
     max-width: 600px;
   }
 
   img {
     content: url(./images/image-product-desktop.jpg);
-    width: 50%;
+    height: 100%;
     border-radius: 10px 0 0 10px;
   }
 
